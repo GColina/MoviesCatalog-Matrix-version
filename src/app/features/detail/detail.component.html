@@ -1,0 +1,19 @@
+<main class="detail-main">
+  <div class="detail-container">
+    <div class="movie-detail-card">
+      <h2 class="movie-title">{{ movie.title }}</h2>
+      <div class="movie-image-container">
+        <img
+          class="movie-image"
+          src="{{ movie.image }}"
+          alt="Imagen de la película"
+        />
+      </div>
+      <p class="movie-date">Fecha de lanzamiento: {{ movie.date }}</p>
+      <p class="movie-description">{{ movie.description }}</p>
+      <button class="back-button" routerLink="/movie-list">
+        Volver al catálogo
+      </button>
+    </div>
+  </div>
+</main>

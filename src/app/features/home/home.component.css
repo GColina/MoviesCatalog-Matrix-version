@@ -1,0 +1,81 @@
+:host {
+  --bright-blue: oklch(51.01% 0.274 263.83);
+  --electric-violet: oklch(53.18% 0.28 296.97);
+  --french-violet: oklch(47.66% 0.246 305.88);
+  --vivid-pink: oklch(69.02% 0.277 332.77);
+  --hot-red: oklch(61.42% 0.238 15.34);
+  --orange-red: oklch(63.32% 0.24 31.68);
+}
+
+/* Contenedor principal */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Título */
+.home-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón principal */
+.home-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: medium;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+
+  /* Degradado de fondo */
+  background: linear-gradient(
+    to bottom right,
+    var(--french-violet),
+    var(--bright-blue)
+  );
+
+  /* Efectos interactivos */
+  transform: scale(1.05); 
+}
+
+.home-button:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0rem 0rem 1rem green; /* Añade sombra */
+}
+
+/* Texto del botón */
+.home-button-text {
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  color: white;
+  transform: scale(1.07);
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://imgs.search.brave.com/EQLpPoXjClxAIqTFnLOw-P9wTmxH6BsiLVwOEJnAnNc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5naXBoeS5jb20v/bWVkaWEvV29ENkpa/bndhcDZzOC9naXBo/eS5naWY.gif') no-repeat center center fixed;
+  background-size: cover; /* Asegura que el GIF ocupe toda la pantalla */
+  opacity: 0.2; /* Reduce la opacidad para que no moleste */
+  z-index: -1; /* Envía el fondo detrás del contenido */
+}
+
+

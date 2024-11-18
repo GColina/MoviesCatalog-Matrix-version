@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  gap: initial;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+li{
+  display: inline-block;
+  margin-right: 1%;
+  margin-left: 3%;
+}
+ol{
+  text-align: right;
+}
+
+.main-title-header{
+  color: var(--electric-violet);
+}
+
+.menu-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-links a {
+  transition: fill 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: var(--button-green);
+}
+
+.menu-links a.active {
+  color: var(--electric-violet);
+}
