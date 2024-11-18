@@ -1,6 +1,8 @@
 # MoviesCatalog
 
-Práctica final angular: Catálogo de Películas
+Práctica final angular: 
+
+Catálogo de Películas
 Desarrolla una aplicación de catálogo de películas en Angular que permita a
 los usuarios navegar entre las secciones de Inicio, Lista de Películas y
 
